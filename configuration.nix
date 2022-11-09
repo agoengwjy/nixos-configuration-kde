@@ -40,6 +40,21 @@
         EXPERT y
         PREEMPT_VOLUNTARY n
         RT_GROUP_SCHED n
+	DRM_AMDGPU_SI n
+	DRM_AMDGPU_CIK n
+	DRM_AMD_DC_DCN1_0 n
+        DRM_AMD_DC_PRE_VEGA n
+        DRM_AMD_DC_DCN2_0 n
+        DRM_AMD_DC_DCN2_1 n
+        DRM_AMD_DC_DCN3_0 n
+        DRM_AMD_DC_DCN n
+        DRM_AMD_DC_HDCP n
+        DRM_AMD_DC_SI n
+	MICROCODE_AMD n
+	PINCTRL_AMD n
+	HSA_AMD n
+	DRM_AMDGPU_USERPTR n
+	X86_AMD_PLATFORM_DEVICE n
       '';
   } ];
   boot.kernelParams = [ "systemd.unified_cgroup_hierarchy=0" ];
