@@ -55,6 +55,8 @@
 	HSA_AMD n
 	DRM_AMDGPU_USERPTR n
 	X86_AMD_PLATFORM_DEVICE n
+	BT_BCM m
+	BT_HCIBTUSB_BCM y
       '';
   } ];
   boot.kernelParams = [ "systemd.unified_cgroup_hierarchy=0" ];
